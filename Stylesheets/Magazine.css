@@ -1,0 +1,289 @@
+.design {
+    position: relative;
+}
+
+.curve {
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    height: 150px;
+    border-top: 4px solid #ff4d6d;
+    border-top-left-radius: 50% 10%;
+    border-top-right-radius: 50% 10%;
+}
+
+.hero-section {
+    background-color: #ff4d6d;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: 'Philosopher', sans-serif;
+    box-sizing: border-box;
+}
+
+.hero-content h1 {
+    font-size: 2.8em;
+    margin: 0;
+    font-weight: normal;
+}
+
+.depilex-magazine-section {
+    font-family: 'Open Sans';
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #2a2a2a;
+    /* color: #fff */
+}
+
+.depilex-magazine-section h1 {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 0;
+    line-height: 1;
+    font-weight: normal;
+}
+
+.depilex-magazine-section h2 {
+    font-size: 2.6em;
+    color: #ff4d6d;
+    margin-top: 0;
+    font-style: italic;
+    line-height: 1;
+}
+
+.depilex-magazine-section .underline {
+    width: 80px;
+    height: 2px;
+    background-color: #ff4d6d;
+    margin: 10px auto 40px auto;
+}
+
+.depilex-magazine-section p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.gallery {
+    padding: 2rem 3%;
+    padding-bottom: 4%;
+    background-color: #2a2a2a;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #2a2a2a;
+
+}
+
+.gallery-grid img {
+    flex: 1 1 250px;
+    max-width: 280px;
+    height: auto;
+    object-fit: cover;
+}
+
+.gallery-grid img:hover {
+    cursor: pointer;
+    border: 2px solid #ff4d6d;
+    transition: border 0.5s ease;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: #1f1f1f 0px 0px 10px 0px;
+}
+
+.pdf-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.521);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.pdf-popup {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pdf-popup iframe {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    border: none;
+    transform-origin: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2rem;
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.education-section {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+}
+
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.education-text {
+    flex: 1 1 45%;
+}
+
+.education-text h2 {
+    font-size: 2.2rem;
+    color: #8bc34a;
+    margin-bottom: 20px;
+    line-height: 1;
+    font-family: 'Philosopher';
+    font-weight: lighter;
+}
+
+.education-text p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.education-image {
+    flex: 1 1 45%;
+    object-fit: cover;
+}
+
+.education-image img {
+    width: 100%;
+    border-radius: 1px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.vision-mission {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3rem;
+    background-color: #aed892;
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.vision-mission div {
+    flex: 1 1 350px;
+    padding: 1.8rem;
+    border-radius: 6px;
+}
+
+.vision-mission div h2 {
+    font-family: 'Philosopher';
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.tabbed-content {
+    padding: 2rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 2rem 0;
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tab-button {
+    background-color: #b4d79c;
+    border: none;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    font-weight: normal;
+    color: white;
+}
+
+.tab-button.active {
+    background-color: #5da144;
+}
+
+.tab-content {
+    display: none;
+    border: 1px solid #444;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+}
+
+.tab-content ul li {
+    flex: 1 1 45%;
+    margin: 0.5rem 0;
+}
+
+.programme-list {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .gallery-grid {
+        justify-content: center;
+    }
+
+    .gallery-grid img {
+        flex: 1 1 45%;
+        max-width: 100%;
+    }
+
+    .vision-mission {
+        flex-direction: column;
+    }
+}

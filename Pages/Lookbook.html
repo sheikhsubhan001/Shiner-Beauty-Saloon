@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lookbook |Best Makeup Artist in Lahore | Glamour Avenue Beauty Clinic</title>
+    <link rel="stylesheet" href="/Stylesheets/Lookbook.css" />
+    <link rel="stylesheet" href="/Stylesheets/CommonStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="icons-container">
+            <div class="header-icons">
+                <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+                <a href="tel:+923127181269"><i class="fas fa-phone-alt"></i></a>
+                <a href="https://wa.me/923127181269"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <div class="header-container">
+            <div class="header-logo">
+                <a href="/index.html">
+                    <img src="/Images/LOGO_Glamour.png" alt="GlamourLogo" />
+                </a>
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars icon" id="icon"></i>
+            </div>
+
+            <nav class="main-nav" id="nav-menu">
+                <ul>
+                    <li><a href="/Pages/SalonFinder.html">Salon Finder</a></li>
+                    <li class="divider"></li>
+                    <li><a href="/Pages/BeautyClinic.html">Beauty Clinic</a></li>
+                    <li><a href="/Pages/GlamourMen.html">Glamour Men</a></li>
+                    <li><a href="/Pages/Services.html">Services</a></li>
+                    <li><a href="/Pages/Lookbook.html" class="active">Lookbook</a></li>
+                    <li class="divider"></li>
+                    <li><a href="/Pages/Education.html">Education</a></li>
+                    <li><a href="/Pages/Magazine.html">Magazine</a></li>
+                    <li><a href="/Pages/About.html">About Us</a></li>
+                    <li><a href="/Pages/Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+     <div class="design">
+        <div class="curve"></div>
+    </div>
+    <section class="lookbook">
+        <section class="lookbook-section">
+            <h2>Lookbook</h2>
+        </section>
+
+        <section class="lookbook-intro">
+            <h2>Discover Your Next</h2>
+            <h3><em>Signature Look!</em></h3>
+            <div class="divider"></div>
+            <p>
+                Step into the world of inspiration! Our curated look books showcase a stunning collection of styles,
+                from dashing men’s cuts to breathtaking bridal makeovers and glamorous celebrity shoots. Whether you’re
+                planning your dream wedding look or craving a bold new style, explore our galleries for ideas that will
+                make you shine. Find your perfect look and let Depilex bring it to life!
+            </p>
+        </section>
+
+        <section class="lookbook-gallery">
+            <ul id="category-list">
+                <li data-category="bridals">Bridals</li>
+                <li data-category="celebrities">Celebrities</li>
+                <li data-category="men">Glamour Men</li>
+                <li data-category="glam">Evening Glam</li>
+                <li data-category="groom">Groom Shoot 2022</li>
+                <li data-category="kids">Kids Shoot 2022</li>
+                <li data-category="metro">Metropolitan Shoot 2022</li>
+                <li data-category="nouman">Nouman Javaid Shoot 2022</li>
+                <li data-category="limitless">The Limitless</li>
+            </ul>
+
+            <div class="image-grid" id="image-container">
+            </div>
+        </section>
+    </section>
+
+
+    <footer class="custom-footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Head Office</h4>
+                <p>Building # 271, CCA, Sector FF, DHA Phase 4, Lahore</p>
+                <p>T: (+92) (0) 423 569 2874</p>
+                <p>T: (+92) (0) 423 569 2875</p>
+                <p>Email: <a href="mailto:info@depilexonline.com">info@depilexonline.com</a></p>
+            </div>
+            <div class="footer-col logo-col">
+                <img src="/Images/LOGO_Glamour.png" alt="Depilex Logo" class="footer-logo" />
+                <p>© 2024 Depilex Group</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+        crossorigin="anonymous"></script>
+    <script>
+        const icon = document.getElementById("icon");
+        const navMenu = document.getElementById('nav-menu');
+        hamburger.addEventListener('click', () => {
+            icon.classList.toggle("fa-bars");
+            icon.classList.toggle("fa-times")
+            navMenu.classList.toggle('active');
+        });
+
+        const categoryList = document.querySelectorAll('#category-list li');
+        const imageContainer = document.getElementById('image-container');
+
+        // Sample image sets
+        const images = {
+            bridals: ['b1.jpg', 'b2.jpg', 'b3.jpg'],
+            celebrities: ['b3.jpg', 'b2.jpg'],
+            men: ['m1.jpg', 'm2.jpg'],
+            glam: ['g1.jpg', 'g2.jpg'],
+            groom: ['gr1.jpg', 'gr2.jpg'],
+            kids: ['k1.jpg', 'k2.jpg'],
+            metro: ['mt1.jpg', 'mt2.jpg'],
+            nouman: ['n1.jpg', 'n2.jpg'],
+            limitless: ['l1.jpg', 'l2.jpg']
+        };
+
+        categoryList.forEach(li => {
+            li.addEventListener('click', () => {
+                categoryList.forEach(item => item.classList.remove('active'));
+                li.classList.add('active');
+
+                const category = li.dataset.category;
+                const selectedImages = images[category];
+
+                imageContainer.innerHTML = selectedImages
+                    .map(src => `<img src="/Images/${src}" alt="${category}">`)
+                    .join('');
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

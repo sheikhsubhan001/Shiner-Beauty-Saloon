@@ -1,0 +1,407 @@
+.design {
+    position: relative;
+}
+
+.curve {
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    height: 150px;
+    border-top: 4px solid #ff4d6d;
+    border-top-left-radius: 50% 10%;
+    border-top-right-radius: 50% 10%;
+}
+.hero-section {
+    background-color: #ff4d6d;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: 'Philosopher', sans-serif;
+    box-sizing: border-box;
+    margin-bottom: 3rem;
+}
+
+.hero-section h1 {
+    font-size: 2.8em;
+    margin: 0;
+    font-weight: normal;
+}
+
+/* Content Row */
+.content-row {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 2rem;
+    margin-bottom: 4rem;
+    margin-top: 5rem;
+}
+
+.text-content {
+    flex: 1;
+}
+
+
+.text-content h2 {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 2.2rem;
+    color: #eee;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.content-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.content-text span {
+    display: block;
+    font-size: 1.8rem;
+    color: #ff4d6d;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.text-content p {
+    color: #aaa;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 2rem;
+    max-width: 80%;
+}
+
+.image-content {
+    flex: 1;
+    height: 100%;
+}
+
+.image-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.find-salon-btn {
+    background-color: #ff4d6d;
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.find-salon-btn:hover {
+    background-color: #ff758f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 77, 109, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1000px) {
+    .content-row {
+        flex-direction: column;
+    }
+
+    .image-content {
+        width: 100%;
+        height: 400px;
+    }
+
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+
+    .text-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .text-content h2 span {
+        font-size: 1.4rem;
+    }
+}
+
+/* Find Branches Section */
+.find-branches-section {
+    background-color: #1f1f1f;
+    padding: 4rem 2rem;
+    margin-top: 3rem;
+}
+
+.branches-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.branches-subtitle {
+    color: #aaa;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.branches-title {
+    color: #ff4d6d;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.branches-options {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.branch-option {
+    position: relative;
+}
+
+.branch-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.branch-option label {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: #2a2a2a;
+    color: #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.branch-option input[type="radio"]:checked+label {
+    background-color: #ff4d6d;
+    color: white;
+}
+
+.branch-option label:hover {
+    background-color: #333;
+}
+
+.location-selector {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.branches-container>p {
+    font-size: x-large;
+    font-family: 'Philosopher', sans-serif;
+    line-height: 1rem;
+}
+
+.location-selector select {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    background-color: #2a2a2a;
+    color: #eee;
+    border: 1px solid #444;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ff4d6d'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1rem;
+}
+
+.location-selector select:focus {
+    outline: none;
+    border-color: #ff4d6d;
+}
+
+.find-btn {
+    background-color: #ff4d6d;
+    color: white;
+    border: none;
+    padding: 0 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.find-btn:hover {
+    background-color: #ff758f;
+}
+
+.foot-img {
+    width: 100%;
+    height: 400px;
+    background-image: url('/Images/Salonfinderfoot.jpg');
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    /* object-fit: cover; */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1000px) {
+    .branches-title {
+        font-size: 2rem;
+    }
+
+    .branches-options {
+        gap: 1rem;
+    }
+
+    .branch-option label {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .location-selector {
+        flex-direction: column;
+    }
+
+    .find-btn {
+        padding: 1rem;
+    }
+
+}
+
+/* Results styling */
+.results-container {
+    margin-top: 2rem;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    /* Hidden by default */
+}
+
+.location-result {
+    background-color: #2a2a2a;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border-left: 4px solid #ff4d6d;
+}
+
+.location-result h3 {
+    color: #ff4d6d;
+    margin-bottom: 0.5rem;
+}
+
+.location-result p {
+    color: #ccc;
+    margin-bottom: 0.3rem;
+}
+
+.error-message {
+    color: #ff4d6d;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 500;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .location-selector {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .location-selector select {
+        margin-bottom: 0;
+        flex: 1;
+    }
+
+    .find-btn {
+        width: auto;
+        min-width: 120px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .branches-options {
+        gap: 0.5rem;
+    }
+
+    .branch-option label {
+        padding: 0.5rem 0.5rem;
+        font-size: 0.8rem;
+    }
+
+
+    .branches-container>p {
+        line-height: 1.2;
+        margin-bottom: 0.5rem;
+        white-space: nowrap;
+    }
+
+
+    .branches-subtitle {
+        white-space: nowrap;
+        font-size: 0.4rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .branches-title {
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+    }
+
+
+    .location-selector select {
+        width: 100%;
+    }
+}
+
+
+.branches-subtitle {
+    display: block;
+    white-space: nowrap;
+    text-align: center;
+}
+
+
+@media (max-width: 480px) {
+    .branches-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .branches-title {
+        font-size: 1.5rem;
+    }
+
+    .branch-option label {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.7rem;
+    }
+}
