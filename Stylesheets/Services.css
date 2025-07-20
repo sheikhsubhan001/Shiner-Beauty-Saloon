@@ -29,7 +29,6 @@
     font-weight:normal;
 }
 
-/* Content Row */
 .content-row {
     display: flex;
     max-width: 1200px;
@@ -102,7 +101,6 @@
         font-size: 1.4rem;
     }
 }
-/* Services Table Section */
 .services-table-section {
     background-color: #1a1a1a;
     padding: 4rem 2rem;
@@ -128,7 +126,6 @@
     margin: 0 auto;
 }
 
-/* Accordion Style Services */
 .services-accordion {
     max-width: 1000px;
     margin: 0 auto;
@@ -181,7 +178,7 @@
 }
 
 .service-category.active .category-services {
-    max-height: 1000px; /* Adjust based on content */
+    max-height: 1000px;
 }
 
 .service-category.active .toggle-icon {
@@ -209,7 +206,6 @@
     font-weight: 600;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .section-header h2 {
         font-size: 2rem;

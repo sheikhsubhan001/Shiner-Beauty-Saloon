@@ -109,7 +109,6 @@ body
         font-size: 1.4rem;
     }
 }
-/* Services Section */
 .services-section {
     background-color: #1a1a1a;
     padding: 4rem 2rem;
@@ -156,7 +155,6 @@ body
     font-size: 0.95rem;
 }
 
-/* Responsive adjustments */
 @media (max-width: 1000px) {
     .services-container {
         grid-template-columns: 1fr;
@@ -181,7 +179,6 @@ body
         font-size: 1.3rem;
     }
 }
-/* Services Header */
 .services-header {
     text-align: center;
     margin-bottom: 3rem;
@@ -203,13 +200,11 @@ body
     line-height: 1.6;
 }
 
-/* Update the existing services-section padding */
 .services-section {
     background-color: #1a1a1a;
-    padding: 5rem 2rem; /* Increased top/bottom padding */
+    padding: 5rem 2rem; 
 }
 
-/* Responsive adjustments for header */
 @media (max-width: 768px) {
     .services-header h2 {
         font-size: 2rem;

@@ -26,8 +26,7 @@
         <div class="header-container">
             <div class="header-logo">
                 <a href="/index.html">
-                    <img src="/Images/LOGO_Glamour.png"
-                        alt="GlamourLogo" />
+                    <img src="/Images/LOGO_Glamour.png" alt="GlamourLogo" />
                 </a>
             </div>
 
@@ -37,7 +36,7 @@
 
             <nav class="main-nav" id="nav-menu">
                 <ul>
-                   <li><a href="/Pages/SalonFinder.html" class="active">Salon Finder</a></li>
+                    <li><a href="/Pages/SalonFinder.html" class="active">Salon Finder</a></li>
                     <li class="divider"></li>
                     <li><a href="/Pages/BeautyClinic.html">Beauty Clinic</a></li>
                     <li><a href="/Pages/GlamourMen.html">Glamour Men</a></li>
@@ -57,12 +56,9 @@
     </div>
 
     <section class="content">
-        <!-- Hero Section -->
         <div class="hero-section">
             <h1>Salon Finder</h1>
         </div>
-
-        <!-- Content Row -->
         <div class="content-row">
             <div class="text-content">
                 <h2>Beauty is just around the corner</h2>
@@ -80,7 +76,6 @@
                 <img src="/Images/SalonFinder.jpg" alt="Salon interior">
             </div>
         </div>
-        <!-- Find Branches Section -->
         <div class="find-branches-section" id="find-branches">
             <div class="branches-container">
                 <p class="branches-subtitle">Start by selecting your</p>
@@ -135,15 +130,11 @@
                 <p>Email: <a href="mailto:info@depilexonline.com">info@depilexonline.com</a></p>
             </div>
             <div class="footer-col logo-col">
-                <img src="/Images/LOGO_Glamour.png"
-                    alt="Depilex Logo" class="footer-logo" />
+                <img src="/Images/LOGO_Glamour.png" alt="Depilex Logo" class="footer-logo" />
                 <p>© 2024 Depilex Group</p>
             </div>
         </div>
     </footer>
-
-
-
 
     <script>
         const icon = document.getElementById("icon");
@@ -315,17 +306,14 @@
             const resultsContainer = document.getElementById('results-container');
             const errorMessage = document.querySelector('.error-message');
 
-            // Hide previous results and error
             resultsContainer.style.display = 'none';
             if (errorMessage) errorMessage.style.display = 'none';
 
-            // Validate city is selected
             if (!selectedCity) {
                 showError("Please select a city first");
                 return;
             }
 
-            // Get locations for selected type and city
             const locations = locationsData[selectedType]?.[selectedCity] || [];
 
             if (locations.length === 0) {
@@ -333,7 +321,6 @@
                 return;
             }
 
-            // Display results
             displayResults(locations);
         });
 
@@ -379,7 +366,6 @@
             resultsContainer.style.display = 'block';
         }
     </script>
-
 </body>
 
 </html>

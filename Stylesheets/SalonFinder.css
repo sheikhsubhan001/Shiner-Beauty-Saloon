@@ -30,7 +30,6 @@
     font-weight: normal;
 }
 
-/* Content Row */
 .content-row {
     display: flex;
     max-width: 1200px;
@@ -113,7 +112,6 @@
     box-shadow: 0 4px 12px rgba(255, 77, 109, 0.3);
 }
 
-/* Responsive adjustments */
 @media (max-width: 1000px) {
     .content-row {
         flex-direction: column;
@@ -137,7 +135,6 @@
     }
 }
 
-/* Find Branches Section */
 .find-branches-section {
     background-color: #1f1f1f;
     padding: 4rem 2rem;
@@ -265,10 +262,8 @@
     background-size: cover;
     /* background-position: center; */
     background-repeat: no-repeat;
-    /* object-fit: cover; */
 }
 
-/* Responsive adjustments */
 @media (max-width: 1000px) {
     .branches-title {
         font-size: 2rem;
@@ -293,7 +288,6 @@
 
 }
 
-/* Results styling */
 .results-container {
     margin-top: 2rem;
     text-align: left;
@@ -301,7 +295,6 @@
     margin-left: auto;
     margin-right: auto;
     display: none;
-    /* Hidden by default */
 }
 
 .location-result {

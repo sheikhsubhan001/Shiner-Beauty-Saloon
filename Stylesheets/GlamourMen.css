@@ -103,7 +103,6 @@ body
         font-size: 1.4rem;
     }
 }
-/* Grooming Services Section */
 .grooming-section {
     background-color: #1a1a1a;
     padding: 5rem 2rem;
@@ -181,7 +180,6 @@ body
     z-index: 1;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 1000px) {
     .grooming-section {
         padding: 3rem 1.5rem;
