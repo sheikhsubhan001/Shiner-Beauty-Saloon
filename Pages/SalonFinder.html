@@ -16,17 +16,21 @@
     <!-- HEADER -->
     <header class="main-header">
         <div class="icons-container">
+             <div class="hardcode">
+                <span>Ph no: +92 300 9455396</span>
+                <span>Gmail: shiner724@gmail.com</span>
+            </div>
             <div class="header-icons">
                 <a href="#"><i class="fas fa-map-marker-alt"></i></a>
-                <a href="tel:+923127181269"><i class="fas fa-phone-alt"></i></a>
-                <a href="https://wa.me/923127181269"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fas fa-phone-alt"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
             </div>
         </div>
 
         <div class="header-container">
             <div class="header-logo">
                 <a href="/index.html">
-                    <img src="/Images/LOGO_Glamour.png" alt="GlamourLogo" />
+                    <img src="/Images/LOGO_Glamour.png" alt="DepilexLogo" />
                 </a>
             </div>
 
@@ -39,12 +43,9 @@
                     <li><a href="/Pages/SalonFinder.html" class="active">Salon Finder</a></li>
                     <li class="divider"></li>
                     <li><a href="/Pages/BeautyClinic.html">Beauty Clinic</a></li>
-                    <li><a href="/Pages/GlamourMen.html">Glamour Men</a></li>
                     <li><a href="/Pages/Services.html">Services</a></li>
                     <li><a href="/Pages/Lookbook.html">Lookbook</a></li>
                     <li class="divider"></li>
-                    <li><a href="/Pages/Education.html">Education</a></li>
-                    <li><a href="/Pages/Magazine.html">Magazine</a></li>
                     <li><a href="/Pages/About.html">About Us</a></li>
                     <li><a href="/Pages/Contact.html">Contact</a></li>
                 </ul>
@@ -56,26 +57,27 @@
     </div>
 
     <section class="content">
+        <!-- Hero Section -->
         <div class="hero-section">
             <h1>Salon Finder</h1>
         </div>
+
+        <!-- Content Row -->
         <div class="content-row">
             <div class="text-content">
-                <h2>Beauty is just around the corner</h2>
-                <div class="content-text"><span>let's get you there!</span>
-                    <p>Looking for the perfect pampering spot? Whether you're in need of a quick <br> glam-up or a full
-                        day of
-                        indulgence or even learn the craft, let us help you find <br> your nearest Depilex. Simply
-                        select your
-                        city, choose the type, and we'll guide <br> you to the nearest location.</p>
-                </div>
-
-                <button class="find-salon-btn" onclick="scrollToBranches()">Find nearest salon</button>
+                <h2>Beauty is just around the corner<br><span>let's get you there!</span></h2>
+                <p>Looking for the perfect pampering spot? Whether you need a quick beauty boost, a full day of
+                    self-care, or want to master the art of beauty, Shiner Beauty Saloon has you covered. Just select
+                    your city, pick your service, and we’ll lead you to the nearest Shiner location.</p>
+                <button class="find-salon-btn"
+                    onclick="window.open('https://www.google.com/maps/place/Shiner+Beauty+Salon/@24.9107554,67.0515613,17z/data=!3m1!4b1!4m6!3m5!1s0x3eb33f79d75774fb:0xd4432b0cee418dd4!8m2!3d24.9107554!4d67.0515613!16s%2Fg%2F11t4bdf1rm?entry=ttu', '_blank')">Find
+                    nearest salon</button>
             </div>
             <div class="image-content">
                 <img src="/Images/SalonFinder.jpg" alt="Salon interior">
             </div>
         </div>
+        <!-- Find Branches Section -->
         <div class="find-branches-section" id="find-branches">
             <div class="branches-container">
                 <p class="branches-subtitle">Start by selecting your</p>
@@ -86,23 +88,14 @@
                         <input type="radio" id="salon" name="branch-type" value="salon" checked>
                         <label for="salon">Salon</label>
                     </div>
-                    <div class="branch-option">
-                        <input type="radio" id="clinic" name="branch-type" value="clinic">
-                        <label for="clinic">Clinic</label>
-                    </div>
-                    <div class="branch-option">
-                        <input type="radio" id="academy" name="branch-type" value="academy">
-                        <label for="academy">Academy</label>
-                    </div>
+
                 </div>
 
                 <div class="location-selector">
                     <select name="city" id="city">
                         <option value="" disabled selected>Select your city</option>
                         <option value="lahore">Lahore</option>
-                        <option value="islamabad">Islamabad</option>
-                        <option value="karachi">Karachi</option>
-                        <option value="peshawar">Peshawar</option>
+
                     </select>
                     <button class="find-btn" id="find-locations-btn">Find</button>
                 </div>
@@ -110,7 +103,9 @@
             </div>
         </div>
     </section>
-    <section class="foot-img"></section>
+
+
+    <!-- FOOTER -->
     <footer class="custom-footer">
         <div class="footer-content">
             <div class="footer-col">
@@ -136,7 +131,12 @@
         </div>
     </footer>
 
+
+
+
+    <!-- SCRIPT: Toggle Menu -->
     <script>
+        // const hamburger = document.getElementById('hamburger');
         const icon = document.getElementById("icon");
         const navMenu = document.getElementById('nav-menu');
         hamburger.addEventListener('click', () => {
@@ -145,156 +145,22 @@
             navMenu.classList.toggle('active');
         });
 
+        
         function scrollToBranches() {
             const branchesSection = document.getElementById('find-branches');
             branchesSection.scrollIntoView({ behavior: 'smooth' });
+            // branchesSection.style.border='5px solid black';
+            // branchesSection.style.background='white';
+            // branchesSection.style.borderRadius="10px"
         }
         const locationsData = {
             salon: {
                 lahore: [
                     {
-                        name: "Depilex Salon DHA",
+                        name: "Shiner Beauty Saloon",
                         address: "Building # 271, CCA, Sector FF, DHA Phase 4",
                         phone: "(042) 356 92874",
                         hours: "10:00 AM - 8:00 PM"
-                    },
-                    {
-                        name: "Depilex Salon Gulberg",
-                        address: "MM Alam Road, Gulberg III",
-                        phone: "(042) 357 12845",
-                        hours: "9:30 AM - 9:00 PM"
-                    },
-                    {
-                        name: "Depilex Salon Liberty",
-                        address: "Liberty Market, Main Boulevard",
-                        phone: "(042) 363 74521",
-                        hours: "10:00 AM - 7:30 PM"
-                    }
-                ],
-                islamabad: [
-                    {
-                        name: "Depilex Salon F-7",
-                        address: "Jinnah Super Market, F-7 Markaz",
-                        phone: "(051) 265 4789",
-                        hours: "10:00 AM - 8:00 PM"
-                    },
-                    {
-                        name: "Depilex Salon Blue Area",
-                        address: "Blue Area, Sector F-6",
-                        phone: "(051) 287 5412",
-                        hours: "9:00 AM - 7:00 PM"
-                    }
-                ],
-                karachi: [
-                    {
-                        name: "Depilex Salon Clifton",
-                        address: "Sea View Road, Block 4",
-                        phone: "(021) 358 74125",
-                        hours: "10:30 AM - 9:00 PM"
-                    },
-                    {
-                        name: "Depilex Salon Saddar",
-                        address: "Zainab Market, Saddar",
-                        phone: "(021) 327 85412",
-                        hours: "9:30 AM - 8:00 PM"
-                    }
-                ],
-                peshawar: [
-                    {
-                        name: "Depilex Salon University Road",
-                        address: "Near Peshawar University",
-                        phone: "(091) 584 7125",
-                        hours: "10:00 AM - 7:00 PM"
-                    }
-                ]
-            },
-            clinic: {
-                lahore: [
-                    {
-                        name: "Depilex Skin Clinic DHA",
-                        address: "Phase 5 Commercial Area, DHA",
-                        phone: "(042) 378 94512",
-                        hours: "11:00 AM - 6:00 PM (Mon-Sat)",
-                        specialties: "Laser Treatments, Dermatology"
-                    },
-                    {
-                        name: "Depilex Aesthetic Clinic",
-                        address: "Main Boulevard, Gulberg",
-                        phone: "(042) 371 84523",
-                        hours: "10:00 AM - 7:00 PM (Mon-Fri)",
-                        specialties: "Cosmetic Procedures, Skin Rejuvenation"
-                    }
-                ],
-                islamabad: [
-                    {
-                        name: "Depilex MediSpa F-8",
-                        address: "F-8 Markaz, Jinnah Avenue",
-                        phone: "(051) 285 6347",
-                        hours: "10:00 AM - 5:00 PM (Sun-Thu)",
-                        specialties: "Botox, Fillers, Skin Treatments"
-                    }
-                ],
-                karachi: [
-                    {
-                        name: "Depilex Laser Clinic",
-                        address: "Khayaban-e-Shamsheer, Phase 5",
-                        phone: "(021) 354 78621",
-                        hours: "11:00 AM - 7:00 PM (Mon-Sat)",
-                        specialties: "Hair Removal, Skin Resurfacing"
-                    }
-                ],
-                peshawar: [
-                    {
-                        name: "Depilex Dermatology Center",
-                        address: "Hayatabad Medical Complex Road",
-                        phone: "(091) 587 4123",
-                        hours: "10:00 AM - 4:00 PM (Sun-Wed)",
-                        specialties: "Acne Treatment, Pigmentation"
-                    }
-                ]
-            },
-            academy: {
-                lahore: [
-                    {
-                        name: "Depilex Beauty Academy Main Campus",
-                        address: "35-T Gulberg III, Main Boulevard",
-                        phone: "(042) 357 12845",
-                        courses: "Professional Makeup, Hair Styling, Skincare",
-                        timing: "9:00 AM - 3:00 PM (Mon-Fri)"
-                    },
-                    {
-                        name: "Depilex Advanced Training Institute",
-                        address: "DHA Phase 6, Near Y-Block Market",
-                        phone: "(042) 374 85123",
-                        courses: "Master Esthetician, Nail Technology",
-                        timing: "10:00 AM - 4:00 PM (Tue-Sat)"
-                    }
-                ],
-                islamabad: [
-                    {
-                        name: "Depilex Academy F-10",
-                        address: "F-10 Markaz, Service Road East",
-                        phone: "(051) 276 8541",
-                        courses: "Bridal Makeup, Salon Management",
-                        timing: "9:30 AM - 2:30 PM (Mon-Thu)"
-                    }
-                ],
-                karachi: [
-                    {
-                        name: "Depilex Cosmetology School",
-                        address: "Clifton Block 2, Near Do Darya",
-                        phone: "(021) 358 74125",
-                        courses: "International Beauty Techniques",
-                        timing: "10:00 AM - 5:00 PM (Sun-Wed)"
-                    }
-                ],
-                peshawar: [
-                    {
-                        name: "Depilex Training Center",
-                        address: "University Road, Opposite Peshawar Club",
-                        phone: "(091) 584 7125",
-                        courses: "Basic & Advanced Beauty Courses",
-                        timing: "9:00 AM - 1:00 PM (Mon-Fri)"
                     }
                 ]
             }
@@ -306,14 +172,17 @@
             const resultsContainer = document.getElementById('results-container');
             const errorMessage = document.querySelector('.error-message');
 
+            // Hide previous results and error
             resultsContainer.style.display = 'none';
             if (errorMessage) errorMessage.style.display = 'none';
 
+            // Validate city is selected
             if (!selectedCity) {
                 showError("Please select a city first");
                 return;
             }
 
+            // Get locations for selected type and city
             const locations = locationsData[selectedType]?.[selectedCity] || [];
 
             if (locations.length === 0) {
@@ -321,6 +190,7 @@
                 return;
             }
 
+            // Display results
             displayResults(locations);
         });
 
@@ -366,6 +236,7 @@
             resultsContainer.style.display = 'block';
         }
     </script>
+
 </body>
 
 </html>

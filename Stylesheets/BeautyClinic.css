@@ -11,6 +11,7 @@
     border-top-left-radius: 50% 10%;
     border-top-right-radius: 50% 10%;
 }
+
 .hero-section {
     background-color: #ff4d6d;
     width: 100%;
@@ -30,6 +31,10 @@
     font-weight: normal;
 }
 
+.content {
+    background-color: #2a2a2a;
+}
+
 .content-row {
     display: flex;
     max-width: 1200px;
@@ -40,10 +45,12 @@
     padding: 0 2rem;
     margin-bottom: 4rem;
 }
-body
-{
-    background-color: #2a2a2a;;
+
+body {
+    background-color: #2a2a2a;
+    ;
 }
+
 .text-content {
     flex: 1;
 }
@@ -64,51 +71,49 @@ body
     margin-top: 0.5rem;
 }
 
-.text-content p 
-{
+.text-content p {
     color: #aaa;
     font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 2rem;
 }
 
-.image-content 
-{
+.image-content {
     flex: 1;
     height: 100%;
 }
 
-.image-content img 
-{
+.image-content img {
     width: 100%;
     height: 400px;
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
-@media (max-width: 1000px) 
-{
+
+@media (max-width: 1000px) {
     .content-row {
         flex-direction: column;
     }
-    
+
     .image-content {
         width: 100%;
         height: 400px;
     }
-    
+
     .hero-section h1 {
         font-size: 3rem;
     }
-    
+
     .text-content h2 {
         font-size: 1.8rem;
     }
-    
+
     .text-content h2 span {
         font-size: 1.4rem;
     }
 }
+
 .services-section {
     background-color: #1a1a1a;
     padding: 4rem 2rem;
@@ -140,11 +145,19 @@ body
     font-size: 2.5rem;
     color: #ff4d6d;
     margin-bottom: 1.5rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+    object-fit: ;
+
 }
 
 .service-card h3 {
     font-family: 'Philosopher', sans-serif;
-    color: #fff;
+    color: #ff4d6d;
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
@@ -154,13 +167,117 @@ body
     line-height: 1.6;
     font-size: 0.95rem;
 }
+.carousel-are
+{
+    display: flex;
+    justify-content: center;
+}
+.carousel-are .slide
+{
+    width: 280px;
+}
+
+.carousel-are .carousel-item {
+    height: 200px;
+    border: 2px solid white;
+}
+
+.carousel-are .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.text-pink {
+    color: #ff4d6d;
+}
+
+.btn-pink {
+    background-color: #ff4d6d;
+    color: #fff;
+    border: none;
+    transition: 0.3s ease;
+}
+
+
+.btn-pink:hover {
+    background-color: #fff;
+    border-bottom: 2px solid #ff4d6d;
+    color: #ff4d6d;
+}
+
+.modern-modal {
+    background: linear-gradient(to right, #1a1a1a, #121212);
+    color: #f0f0f0;
+    border: 1px solid #f54e84;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(245, 78, 132, 0.3);
+    padding: 20px;
+}
+.modal-body .lead
+{
+    font-size: 0.7rem;
+}
+.modal-body ul li 
+{
+    font-size: 0.8rem ;
+    color: #aaa;
+
+}
+.modal-header .modal-title {
+    font-family: 'Poppins', sans-serif;
+}
+
+.modal-body p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.modal-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-footer span {
+    color: #aaa;
+}
+
+.modal-footer .book-btn {
+    background-color: #ff4d6d;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    animation: moveUpFade 2.5s ease-in-out infinite;
+}
+
+@keyframes moveUpFade {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 @media (max-width: 1000px) {
     .services-container {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
-    
+
     .service-card {
         padding: 1.5rem;
     }
@@ -170,15 +287,16 @@ body
     .services-section {
         padding: 3rem 1rem;
     }
-    
+
     .service-icon {
         font-size: 2rem;
     }
-    
+
     .service-card h3 {
         font-size: 1.3rem;
     }
 }
+
 .services-header {
     text-align: center;
     margin-bottom: 3rem;
@@ -202,14 +320,14 @@ body
 
 .services-section {
     background-color: #1a1a1a;
-    padding: 5rem 2rem; 
+    padding: 5rem 2rem;
 }
 
 @media (max-width: 768px) {
     .services-header h2 {
         font-size: 2rem;
     }
-    
+
     .services-header p {
         font-size: 1rem;
     }
@@ -219,7 +337,7 @@ body
     .services-header h2 {
         font-size: 1.8rem;
     }
-    
+
     .services-section {
         padding: 3rem 1rem;
     }

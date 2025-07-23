@@ -4,21 +4,24 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lookbook |Best Makeup Artist in Lahore | Glamour Avenue Beauty Clinic</title>
+    <title>Lookbook | Shiner Beauty Saloon</title>
     <link rel="stylesheet" href="/Stylesheets/Lookbook.css" />
     <link rel="stylesheet" href="/Stylesheets/CommonStyle.css">
     <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-
 <body>
     <header class="main-header">
         <div class="icons-container">
+            <div class="hardcode">
+                <span>Ph no: +92 300 9455396</span>
+                <span>Gmail: shiner724@gmail.com</span>
+            </div>
             <div class="header-icons">
                 <a href="#"><i class="fas fa-map-marker-alt"></i></a>
-                <a href="tel:+923127181269"><i class="fas fa-phone-alt"></i></a>
-                <a href="https://wa.me/923127181269"><i class="fab fa-whatsapp"></i></a>
+                <a href="tel:+923009455396"><i class="fas fa-phone-alt"></i></a>
+                <a href="https://wa.me/923009455396"><i class="fab fa-whatsapp"></i></a>
             </div>
         </div>
 
@@ -38,19 +41,16 @@
                     <li><a href="/Pages/SalonFinder.html">Salon Finder</a></li>
                     <li class="divider"></li>
                     <li><a href="/Pages/BeautyClinic.html">Beauty Clinic</a></li>
-                    <li><a href="/Pages/GlamourMen.html">Glamour Men</a></li>
                     <li><a href="/Pages/Services.html">Services</a></li>
                     <li><a href="/Pages/Lookbook.html" class="active">Lookbook</a></li>
                     <li class="divider"></li>
-                    <li><a href="/Pages/Education.html">Education</a></li>
-                    <li><a href="/Pages/Magazine.html">Magazine</a></li>
                     <li><a href="/Pages/About.html">About Us</a></li>
                     <li><a href="/Pages/Contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-     <div class="design">
+    <div class="design">
         <div class="curve"></div>
     </div>
     <section class="lookbook">
@@ -63,10 +63,9 @@
             <h3><em>Signature Look!</em></h3>
             <div class="divider"></div>
             <p>
-                Step into the world of inspiration! Our curated look books showcase a stunning collection of styles,
-                from dashing men’s cuts to breathtaking bridal makeovers and glamorous celebrity shoots. Whether you’re
-                planning your dream wedding look or craving a bold new style, explore our galleries for ideas that will
-                make you shine. Find your perfect look and let Depilex bring it to life!
+                Step into the world of beauty with Shiner! Explore our curated look books featuring trendy men’s cuts,
+                radiant party glam, stunning bridal makeovers, and more. Whether you're planning a dream wedding or a
+                bold new transformation, discover styles that inspire — and let Shiner Beauty Saloon make them yours.
             </p>
         </section>
 
@@ -74,12 +73,10 @@
             <ul id="category-list">
                 <li data-category="bridals">Bridals</li>
                 <li data-category="celebrities">Celebrities</li>
-                <li data-category="men">Glamour Men</li>
+                <!-- <li data-category="men">Glamour Men</li> -->
                 <li data-category="glam">Evening Glam</li>
                 <li data-category="groom">Groom Shoot 2022</li>
-                <li data-category="kids">Kids Shoot 2022</li>
-                <li data-category="metro">Metropolitan Shoot 2022</li>
-                <li data-category="nouman">Nouman Javaid Shoot 2022</li>
+               
                 <li data-category="limitless">The Limitless</li>
             </ul>
 
@@ -95,7 +92,7 @@
                 <h4>Follow Us</h4>
                 <div class="social-icons">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/shinerbeautysaloon/" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-youtube"></i></a>
                     <a href="#"><i class="fab fa-tiktok"></i></a>
                 </div>
@@ -105,11 +102,11 @@
                 <p>Building # 271, CCA, Sector FF, DHA Phase 4, Lahore</p>
                 <p>T: (+92) (0) 423 569 2874</p>
                 <p>T: (+92) (0) 423 569 2875</p>
-                <p>Email: <a href="mailto:info@depilexonline.com">info@depilexonline.com</a></p>
+                <p>Email: <a href="mailto:shiner724@gmail.com">shiner724@gmail.com</a></p>
             </div>
             <div class="footer-col logo-col">
-                <img src="/Images/LOGO_Glamour.png" alt="Depilex Logo" class="footer-logo" />
-                <p>© 2024 Depilex Group</p>
+                <img src="/Images/LOGO_Glamour.png" alt="shiner Logo" class="footer-logo" />
+                <p>© 2025 Shiner Beauty Group</p>
             </div>
         </div>
     </footer>
@@ -129,14 +126,10 @@
         const imageContainer = document.getElementById('image-container');
 
         const images = {
-            bridals: ['b1.jpg', 'b2.jpg', 'b3.jpg'],
-            celebrities: ['b3.jpg', 'b2.jpg'],
-            men: ['m1.jpg', 'm2.jpg'],
+            bridals: ['b1.jpg', 'b2.jpg', 'b3.jpg', 'b4.jpg', 'b5.jpg'],
+            celebrities: ['c1.jpg', 'c2.jpg', 'c3.jpg'],
             glam: ['g1.jpg', 'g2.jpg'],
             groom: ['gr1.jpg', 'gr2.jpg'],
-            kids: ['k1.jpg', 'k2.jpg'],
-            metro: ['mt1.jpg', 'mt2.jpg'],
-            nouman: ['n1.jpg', 'n2.jpg'],
             limitless: ['l1.jpg', 'l2.jpg']
         };
 
@@ -155,4 +148,5 @@
         });
     </script>
 </body>
+
 </html>

@@ -20,9 +20,18 @@ body {
 }
 
 .icons-container {
-  text-align: right;
+  /* text-align: right; */
   background-color: #2a2a2a;
   padding: 0.5rem 2rem 0.5rem 0;
+  color: #eee;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+}
+.icons-container .hardcode
+{
+  display: flex;
+  gap: 1rem;
 }
 
 .header-icons a {

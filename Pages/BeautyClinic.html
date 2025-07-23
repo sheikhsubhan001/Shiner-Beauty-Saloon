@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beauty Clinic</title>
+    <title>Beauty Clinic | Shiner Beauty Saloon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/Stylesheets/CommonStyle.css" />
     <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -16,10 +17,14 @@
     <body>
         <header class="main-header">
             <div class="icons-container">
+                <div class="hardcode">
+                    <span>Ph no: +92 300 9455396</span>
+                    <span>Gmail: shiner724@gmail.com</span>
+                </div>
                 <div class="header-icons">
                     <a href="#"><i class="fas fa-map-marker-alt"></i></a>
-                    <a href="tel:+923127181269"><i class="fas fa-phone-alt"></i></a>
-                    <a href="https://wa.me/923127181269"><i class="fab fa-whatsapp"></i></a>
+                    <a href="tel:+923009455396"><i class="fas fa-phone-alt"></i></a>
+                    <a href="https://wa.me/923009455396"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
 
@@ -39,12 +44,9 @@
                         <li><a href="/Pages/SalonFinder.html">Salon Finder</a></li>
                         <li class="divider"></li>
                         <li><a href="/Pages/BeautyClinic.html" class="active">Beauty Clinic</a></li>
-                        <li><a href="/Pages/GlamourMen.html">Glamour Men</a></li>
                         <li><a href="/Pages/Services.html">Services</a></li>
                         <li><a href="/Pages/Lookbook.html">Lookbook</a></li>
                         <li class="divider"></li>
-                        <li><a href="/Pages/Education.html">Education</a></li>
-                        <li><a href="/Pages/Magazine.html">Magazine</a></li>
                         <li><a href="/Pages/About.html">About Us</a></li>
                         <li><a href="/Pages/Contact.html">Contact</a></li>
                     </ul>
@@ -61,10 +63,7 @@
             <div class="content-row">
                 <div class="text-content">
                     <h2>Transforming the beauty service<br><span>landscape</span></h2>
-                    <p>Depilex opened the doors of its first salon in 1980 in the bustling metropolis, Karachi. A new
-                        name in the nonexistent field of beauty service providers in Pakistan, but with sheer
-                        determination, hard work, and dedicated leadership of its founder Masarrat Misbah, it is today a
-                        household name.</p>
+                    <p>Shiner Beauty Saloon began its journey with a passion for redefining beauty standards in Pakistan. Through expert care, quality service, and client trust, it has grown into a trusted name in the beauty industry.</p>
                 </div>
                 <div class="image-content">
                     <img src="/Images/BeatyClinic1.jpg" alt="Error loading image">
@@ -77,38 +76,311 @@
                 <p>Experience exceptional beauty treatments tailored to your needs</p>
             </div>
             <div class="services-container">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-paint-brush"></i>
+                <div class="service-card" data-bs-toggle="modal" data-bs-target="#makeupModal">
+                    <div class="service-icon" style="background-image: url('/Images/innermain.jpg');">
                     </div>
-                    <h3>Makeup</h3>
+                    <h3>Bridal Makeup</h3>
                     <p>An evening make-up and hair look created for all kinds of events from dinner parties, wedding
                         events to graduation ceremonies.</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-cut"></i>
+                <div class="service-card" data-bs-toggle="modal" data-bs-target="#hairModal">
+                    <div class="service-icon" style="background-image: url('/Images/HairStyle.jpg');">
                     </div>
                     <h3>Hair Dressing</h3>
                     <p>A wide range of hair treatments using internationally acclaimed brands are offered at Depilex to
                         revive, replenish and hydrate hair.</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-spa"></i>
+                <div class="service-card" data-bs-toggle="modal" data-bs-target="#PartyMakeup">
+                    <div class="service-icon" style="background-image: url('/Images/party.jpg');">
                     </div>
-                    <h3>Body Therapy</h3>
+                    <h3>Party Makeup</h3>
                     <p>Massage by using a blend of cold pressed aromatherapy oils Depilex offers a variety of body
                         massages carried out by professional therapists.</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-smile"></i>
+                <div class="service-card" data-bs-toggle="modal" data-bs-target="#Modelshoot">
+                    <div class="service-icon" style="background-image: url('/Images/model.jpg');">
                     </div>
-                    <h3>Facial Treatments</h3>
+                    <h3>Model Photoshoot Makeup</h3>
                     <p>Using award winning and internationally acclaimed products, with over 35 years of experience
                         Depilex therapists cater to solving all kinds of skin problems by customizing treatment plans
                         for the most effective results.</p>
+                </div>
+            </div>
+        </section>
+        <section class="hide">
+
+
+            <div class="modal fade" id="makeupModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg"> <!-- Centered and wider -->
+                    <div class="modal-content modern-modal">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header border-0">
+                            <div class="d-flex align-items-center gap-3">
+                                <i class="fas fa-paint-brush fs-2 text-pink"></i>
+                                <h4 class="modal-title fw-bold mb-0">Bridal Makeup</h4>
+                            </div>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <div class="carousel-are">
+                                <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel"
+                                    data-bs-interval="2000">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleAutoplaying"
+                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                            aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleAutoplaying"
+                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleAutoplaying"
+                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item outerimg active">
+                                            <img src="/Images/innercaro.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item outerimg">
+                                            <img src="/Images/innercaro1.jpg" class="d-block w-100" alt="...">
+
+                                        </div>
+                                        <div class="carousel-item outerimg">
+                                            <img src="/Images/innercaro2.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="lead mt-2 text-center">
+                                Shiner Beauty Saloon’s Bridal Package offers a flawless, luxurious look crafted by
+                                experts for your big day.
+                            </p>
+                            <ul class="list-unstyled text-left mt-3">
+                                <li><i class="fas fa-check-circle text-pink me-2"></i> Customized bridal makeup tailored
+                                    to your style</li>
+                                <li><i class="fas fa-check-circle text-pink me-2"></i> High-end, long-lasting makeup
+                                    products</li>
+                                <li><i class="fas fa-check-circle text-pink me-2"></i> Skin prep and glow-boosting
+                                    facial treatments</li>
+                                <li><i class="fas fa-check-circle text-pink me-2"></i> Dupatta and jewelry setting
+                                    included</li>
+                                <li><i class="fas fa-check-circle text-pink me-2"></i> Relaxing pre-bridal spa options
+                                    available</li>
+                                <li><i class="fas fa-check-circle text-pink me-2"></i> Trial session available upon
+                                    request</li>
+                                <li><i class="fas fa-check-circle text-pink me-2"></i> Ideal for weddings and bridal
+                                    showers</li>
+                            </ul>
+                        </div>
+
+                        <!-- Modal Footer -->
+                        <div class="modal-footer border-0 justify-content-between">
+                            <span class="small">Service Duration: ~120 minutes</span>
+                            <button class="book-btn px-4"><a style="list-style: none; text-decoration: none; color: white;" href="https://wa.me/923009455396"> Book Now </a></button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Hair Modal -->
+            <div class="modal fade" id="hairModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg"> <!-- Centered and wider -->
+                    <div class="modal-content modern-modal">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header border-0">
+                            <div class="d-flex align-items-center gap-3">
+                                <i class="fas fa-paint-brush fs-2 text-pink"></i>
+                                <h4 class="modal-title fw-bold mb-0">Hair Dressing</h4>
+                            </div>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <div class="carousel-are">
+                                <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel"
+                                    data-bs-interval="2000">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleAutoplaying"
+                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                            aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleAutoplaying"
+                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleAutoplaying"
+                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item outerimg active">
+                                            <img src="/Images/hair.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="lead mt-2 text-center">
+                                Shiner Beauty Saloon’s Bridal Package offers a flawless, luxurious look crafted by
+                                experts for your big day.
+                            </p>
+                            <ul class="list-unstyled text-left mt-3">
+                                <li><i class="fas fa-check-circle text-pink me-2"></i> Personalized hairstyles for
+                                    casual, special events</li>
+                                <li><i class="fas fa-check-circle text-pink me-2"></i> Professional use of premium tools
+                                    and styling products</li>
+                                <li><i class="fas fa-check-circle text-pink me-2"></i> Variety of styles: curls, waves,
+                                    straightening, and updos</li>
+                                <li><i class="fas fa-check-circle text-pink me-2"></i> Trendy cuts and trims to suit
+                                    your face shape</li>
+                                <li><i class="fas fa-check-circle text-pink me-2"></i> Hair treatments to restore shine
+                                    and strength</li>
+                                <li><i class="fas fa-check-circle text-pink me-2"></i> Hair setting for dupattas,
+                                    accessories, or formal wear</li>
+                                <li><i class="fas fa-check-circle text-pink me-2"></i> Ideal for parties, weddings,
+                                    graduations, and more</li>
+
+                            </ul>
+                        </div>
+
+                        <!-- Modal Footer -->
+                        <div class="modal-footer border-0 justify-content-between">
+                            <span class="small">Service Duration: ~30 minutes</span>
+                            <button class="book-btn px-4"><a style="list-style: none; text-decoration: none; color: white;" href="https://wa.me/923009455396"> Book Now </a></button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3rd -->
+            <div class="modal fade" id="PartyMakeup" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg"> <!-- Centered and wider -->
+                    <div class="modal-content modern-modal">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header border-0">
+                            <div class="d-flex align-items-center gap-3">
+                                <i class="fas fa-paint-brush fs-2 text-pink"></i>
+                                <h4 class="modal-title fw-bold mb-0">Party Makeup</h4>
+                            </div>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <div class="carousel-are">
+                                <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel"
+                                    data-bs-interval="2000">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleAutoplaying"
+                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                            aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleAutoplaying"
+                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleAutoplaying"
+                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item outerimg active">
+                                            <img src="/Images/party.jpg" class="d-block w-100" alt="...">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="lead mt-2 text-center">
+                                Shiner Beauty Saloon’s Bridal Package offers a flawless, luxurious look crafted by
+                                experts for your big day.
+                            </p>
+                            <ul class="list-unstyled text-left mt-3">
+                                <li><i class="fas fa-check-circle text-pink me-2"></i> Glam party makeup tailored to
+                                    your style</li>
+                                <li><i class="fas fa-check-circle text-pink me-2"></i> Long-lasting, high-quality
+                                    products used</li>
+                                <li><i class="fas fa-check-circle text-pink me-2"></i> Light skin prep for a radiant
+                                    finish</li>
+                                <li><i class="fas fa-check-circle text-pink me-2"></i> Quick dupatta or accessory
+                                    setting if needed</li>
+                                <li><i class="fas fa-check-circle text-pink me-2"></i> Perfect for birthdays, dinners &
+                                    festive events</li>
+
+                            </ul>
+                        </div>
+
+                        <!-- Modal Footer -->
+                        <div class="modal-footer border-0 justify-content-between">
+                            <span class="small">Service Duration: ~60 minutes</span>
+                            <button class="book-btn px-4"><a style="list-style: none; text-decoration: none; color: white;" href="https://wa.me/923009455396"> Book Now </a></button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- 4th -->
+            <div class="modal fade" id="Modelshoot" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg"> <!-- Centered and wider -->
+                    <div class="modal-content modern-modal">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header border-0">
+                            <div class="d-flex align-items-center gap-3">
+                                <i class="fas fa-paint-brush fs-2 text-pink"></i>
+                                <h4 class="modal-title fw-bold mb-0">Model PhotoShoot Makeup</h4>
+                            </div>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <div class="carousel-are">
+                                <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel"
+                                    data-bs-interval="2000">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleAutoplaying"
+                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                            aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleAutoplaying"
+                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleAutoplaying"
+                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item outerimg active">
+                                            <img src="/Images/model.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="lead mt-2 text-center">
+                                Shiner Beauty Saloon’s Bridal Package offers a flawless, luxurious look crafted by
+                                experts for your big day.
+                            </p>
+                            <ul class="list-unstyled text-left mt-3">
+                                <li><i class="fas fa-check-circle text-pink me-2"></i> Customized bridal makeup tailored
+                                    to your style</li>
+                                <li><i class="fas fa-check-circle text-pink me-2"></i> High-end, long-lasting makeup
+                                    products</li>
+                                <li><i class="fas fa-check-circle text-pink me-2"></i> Skin prep and glow-boosting
+                                    facial treatments</li>
+                                <li><i class="fas fa-check-circle text-pink me-2"></i> Dupatta and jewelry setting
+                                    included</li>
+                                <li><i class="fas fa-check-circle text-pink me-2"></i> Relaxing pre-bridal spa options
+                                    available</li>
+                                <li><i class="fas fa-check-circle text-pink me-2"></i> Trial session available upon
+                                    request</li>
+                                <li><i class="fas fa-check-circle text-pink me-2"></i> Ideal for weddings and bridal
+                                    showers</li>
+                            </ul>
+                        </div>
+
+                        <!-- Modal Footer -->
+                        <div class="modal-footer border-0 justify-content-between">
+                            <span class="small">Service Duration: ~80 minutes</span>
+                            <button class="book-btn px-4"><a style="list-style: none; text-decoration: none; color: white;" href="https://wa.me/923009455396"> Book Now </a></button>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </section>
@@ -118,7 +390,7 @@
                     <h4>Follow Us</h4>
                     <div class="social-icons">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/shinerbeautysaloon/" target="_blank"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-youtube"></i></a>
                         <a href="#"><i class="fab fa-tiktok"></i></a>
                     </div>
@@ -128,15 +400,18 @@
                     <p>Building # 271, CCA, Sector FF, DHA Phase 4, Lahore</p>
                     <p>T: (+92) (0) 423 569 2874</p>
                     <p>T: (+92) (0) 423 569 2875</p>
-                    <p>Email: <a href="mailto:info@depilexonline.com">info@depilexonline.com</a></p>
+                    <p>Email: <a href="mailto:shiner724@gmail.com">shiner724@gmail.com</a></p>
                 </div>
                 <div class="footer-col logo-col">
                     <img src="/Images/LOGO_Glamour.png" alt="Depilex Logo" class="footer-logo" />
-                    <p>© 2024 Depilex Group</p>
+                <p>© 2025 Shiner Beauty Group</p>
                 </div>
             </div>
         </footer>
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+            integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+            crossorigin="anonymous"></script>
         <script>
             const icon = document.getElementById("icon");
             const navMenu = document.getElementById('nav-menu');
@@ -148,4 +423,5 @@
         </script>
     </body>
 </body>
+
 </html>
