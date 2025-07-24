@@ -16,14 +16,14 @@
     <!-- HEADER -->
     <header class="main-header">
         <div class="icons-container">
-             <div class="hardcode">
+            <div class="hardcode">
                 <span>Ph no: +92 300 9455396</span>
                 <span>Gmail: shiner724@gmail.com</span>
             </div>
             <div class="header-icons">
                 <a href="#"><i class="fas fa-map-marker-alt"></i></a>
-                <a href="#"><i class="fas fa-phone-alt"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="tel:+923009455396" target="_blank"><i class="fas fa-phone-alt"></i></a>
+                <a href="https://wa.me/923009455396" target="_blank"><i class="fab fa-whatsapp"></i></a>
             </div>
         </div>
 
@@ -70,14 +70,13 @@
                     self-care, or want to master the art of beauty, Shiner Beauty Saloon has you covered. Just select
                     your city, pick your service, and we’ll lead you to the nearest Shiner location.</p>
                 <button class="find-salon-btn"
-                    onclick="window.open('https://www.google.com/maps/place/Shiner+Beauty+Salon/@24.9107554,67.0515613,17z/data=!3m1!4b1!4m6!3m5!1s0x3eb33f79d75774fb:0xd4432b0cee418dd4!8m2!3d24.9107554!4d67.0515613!16s%2Fg%2F11t4bdf1rm?entry=ttu', '_blank')">Find
-                    nearest salon</button>
+                    onclick="window.open('https://maps.app.goo.gl/VFuwkmxujsiZg2x8A', '_blank')">Find
+                    Our Salon</button>
             </div>
             <div class="image-content">
                 <img src="/Images/SalonFinder.jpg" alt="Salon interior">
             </div>
         </div>
-        <!-- Find Branches Section -->
         <div class="find-branches-section" id="find-branches">
             <div class="branches-container">
                 <p class="branches-subtitle">Start by selecting your</p>
@@ -90,7 +89,6 @@
                     </div>
 
                 </div>
-
                 <div class="location-selector">
                     <select name="city" id="city">
                         <option value="" disabled selected>Select your city</option>
@@ -119,14 +117,13 @@
             </div>
             <div class="footer-col">
                 <h4>Head Office</h4>
-                <p>Building # 271, CCA, Sector FF, DHA Phase 4, Lahore</p>
-                <p>T: (+92) (0) 423 569 2874</p>
-                <p>T: (+92) (0) 423 569 2875</p>
-                <p>Email: <a href="mailto:info@depilexonline.com">info@depilexonline.com</a></p>
+                <p>PCSIR Phase 2, Lahore</p>
+                <p>Tel: (+92) 300 9455396</p>
+                <p>Email: <a href="mailto:shiner724@gmail.com">shiner724@gmail.com</a></p>
             </div>
             <div class="footer-col logo-col">
                 <img src="/Images/LOGO_Glamour.png" alt="Depilex Logo" class="footer-logo" />
-                <p>© 2024 Depilex Group</p>
+                <p>© 2025 Shiner Beauty Group</p>
             </div>
         </div>
     </footer>
@@ -134,9 +131,7 @@
 
 
 
-    <!-- SCRIPT: Toggle Menu -->
     <script>
-        // const hamburger = document.getElementById('hamburger');
         const icon = document.getElementById("icon");
         const navMenu = document.getElementById('nav-menu');
         hamburger.addEventListener('click', () => {
@@ -145,21 +140,19 @@
             navMenu.classList.toggle('active');
         });
 
-        
+
         function scrollToBranches() {
             const branchesSection = document.getElementById('find-branches');
             branchesSection.scrollIntoView({ behavior: 'smooth' });
-            // branchesSection.style.border='5px solid black';
-            // branchesSection.style.background='white';
-            // branchesSection.style.borderRadius="10px"
+         
         }
         const locationsData = {
             salon: {
                 lahore: [
                     {
                         name: "Shiner Beauty Saloon",
-                        address: "Building # 271, CCA, Sector FF, DHA Phase 4",
-                        phone: "(042) 356 92874",
+                        address: "PCSIR Phase 2, Lahore",
+                        phone: "(+92) 300 9455396",
                         hours: "10:00 AM - 8:00 PM"
                     }
                 ]
@@ -172,17 +165,14 @@
             const resultsContainer = document.getElementById('results-container');
             const errorMessage = document.querySelector('.error-message');
 
-            // Hide previous results and error
             resultsContainer.style.display = 'none';
             if (errorMessage) errorMessage.style.display = 'none';
 
-            // Validate city is selected
             if (!selectedCity) {
                 showError("Please select a city first");
                 return;
             }
 
-            // Get locations for selected type and city
             const locations = locationsData[selectedType]?.[selectedCity] || [];
 
             if (locations.length === 0) {
@@ -190,7 +180,6 @@
                 return;
             }
 
-            // Display results
             displayResults(locations);
         });
 
